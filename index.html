@@ -23,7 +23,7 @@
             <a href="./index.html" class="header-logo link animate__animated animate__fadeInLeft">Web<span class="header-logo-part">Studio</span></a>
             <ul class="header-list list">
                 <li class="header-item">
-                    <a class="header-link link" href="./index.html">Студия</a>
+                    <a class="header-link link current" href="./index.html">Студия</a>
                 </li>
                 <li class="header-item">
                     <a class="header-link link" href="./portfolio.html">Портфолио</a>
@@ -52,7 +52,7 @@
         <section class="hero">
           <div class="container"></div>
            <h1 class="hero-title">Эффективные решения <br> для вашего бизнеса</h1>
-            <button type="button" class="hero-button">Заказать услугу</button>
+            <button type="button" class="hero-button" data-modal-open>Заказать услугу</button>
             </div>
             </section>
 <!-- Особенности -->
@@ -388,6 +388,16 @@
         </div>
         </div>
     </footer>
-    <script src="./js/modal.js></script>
+    <div class="backdrop is-hidden" data-modal>
+     <div class="modal">
+         <button type="button" class="close-btn" data-modal-close>
+        <svg class="" width="11" height="11">
+            <use href="./images/icons.svg#icon-cross"></use>
+            </svg>
+         </button>
+     </div>
+    </div>
+
+    <script src="./js/modal.js"></script>
 </body>
 </html>
